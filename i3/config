@@ -210,4 +210,5 @@ exec_always "setxkbmap -layout fr"
 exec_always --no-startup-id xrdb ~/.Xresources
 exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpapers/wp2743783.jpg
 exec_always "sh ~/.config/polybar/launch_polybar.sh"
+exec_always "xrdb -merge ~/.config/Xresources"
 exec /usr/bin/prime-offload
