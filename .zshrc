@@ -6,7 +6,15 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:/home/jaro/win32yank.exe
 
-plugins=(git)
+plugins=(
+  git
+  sudo
+  copybuffer
+  copyfile
+  docker-compose
+  docker
+  zsh-autosuggestions   
+)
 
 
 
