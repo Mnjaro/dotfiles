@@ -8,12 +8,14 @@ export PATH=$PATH:/home/jaro/win32yank.exe
 
 plugins=(
   git
+  npm
   sudo
   copybuffer
   copyfile
   docker-compose
   docker
   zsh-autosuggestions   
+  gitignore
 )
 
 
