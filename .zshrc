@@ -1,23 +1,26 @@
-export ZSH="/home/jaro/.oh-my-zsh"
+# EXPORTS
+export ZSH="/home/ariagroult/.oh-my-zsh"
+export NVM_DIR="$HOME/.nvm"
 
-plugins=(
-  git
-  npm
-  sudo
-  copybuffer
-  copyfile
-  docker-compose
-  docker
-  zsh-autosuggestions   
-  gitignore
-)
+# CONFIGURATIONS
+# ZSH
+ZSH_THEME="robbyrussell"
 
+plugins=(git)
 
+# FUNCTIONS
+#		- start xclip with arguments
+				xc(){
+				  cat "$1" | xclip -selection clipboard
+				}					
+#		- end xclip with arguments
+				
+# ALIASES
+# nvim
+alias v="nvim"
 
-ZSH_THEME="af-magic"
-# User configuration
-alias win='cd /mnt/c/Users/ariag';
-alias dev='cd ~/Dev';
-alias v='nvim';
-
+# SOURCING
 source $ZSH/oh-my-zsh.sh
+
+# LOADING SCRIPTS
+if [ "$TMUX" = "" ]; then tmux; fi
